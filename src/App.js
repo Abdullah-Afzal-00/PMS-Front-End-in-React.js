@@ -22,6 +22,7 @@ import AdminVehicle from "./components/Admin/AdminVehicle";
 import UnAuthorized from "./UnAuthorized";
 import axios from "./axios";
 import AdminBooking from "./components/Admin/AdminBooking";
+import User from "./components/Admin/User";
 
 function App() {
   const [isAuth, setIsAuth] = useState(false);
@@ -81,6 +82,7 @@ function App() {
                   <Route path="addFloor" element={<AddFloor />}></Route>
                   <Route path="adminVehicle" element={<AdminVehicle />}></Route>
                   <Route path="adminBooking" element={<AdminBooking />}></Route>
+                  <Route path="users" element={<User />}></Route>
                 </Route>
               ) : (
                 <Route path="unAuthorized" element={<UnAuthorized />}></Route>

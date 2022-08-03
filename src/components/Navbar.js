@@ -74,6 +74,13 @@ function Navbar({ user, setIsAuth, setUser }) {
                   </Link>
                 </li>
               )}
+              {user?.role === 1 && (
+                <li class="nav-item">
+                  <Link class="nav-link" to="users">
+                    Users
+                  </Link>
+                </li>
+              )}
               <li class="nav-item">
                 <Link class="nav-link" to="#" onClick={logOut}>
                   Logout
